@@ -87,33 +87,12 @@ ul{
   flex-direction: column;
   align-items: center;
 }
-#menu h3{
-  font-size: 25px;
-}
-.slide{
-  position: relative;
-  text-align: center;
-  background-color: var(--varyLightGray);
-  padding: 4rem 2rem;
-  margin: 5rem 1rem;
-  margin-top: 9rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.slide h4{
-  padding: 2rem 0;
-}
-.menu--item img{
-  position: absolute;
-  top: -3rem;
-  width: 100px;
-}
+
+
 .get-started{
   background-color: var(--brightRed);
   padding: 1rem 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   border-radius: 30px
 }
 .get-started a{
@@ -130,7 +109,6 @@ ul{
 .menu{
   text-align: center;
   position: relative;
-  text-align: center;
   background-color: var(--varyLightGray);
   padding: 4rem 2rem;
   margin: 5rem 1rem;
@@ -140,6 +118,28 @@ ul{
     justify-content: center;
     align-items: center;
 }
+.menu h3{
+  font-size: 25px;
+}
+
+.menu--item  h4{
+  padding: 2rem 0;
+}
+
+.carousel-nav{
+  position: absolute;
+  left: 50%;
+  margin: 0px 0 0 -50px;
+  bottom: -3.5rem;
+}
+
+.menu--item  img{
+  position: absolute;
+  top: -3rem;
+  left: 50%;
+  margin: 0px 0 0 -50px;
+  width: 100px;
+}
 .menu--item{
   display: none;
 }
@@ -147,11 +147,10 @@ ul{
 display:block;
 }
 .carousel-button{
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   display: inline-block;
   border: 1px solid var(--brightRed);
-  
   border-radius: 50%;
   cursor: pointer;
 }

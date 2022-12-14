@@ -1,14 +1,16 @@
+const menu=document.querySelector('.menu');
 document.querySelectorAll('.menu--wrapper').forEach(carousel=>{
 const items=carousel.querySelectorAll('.menu--item');
 const buttonsHtml=Array.from(items,()=>{
     return ` <span class="carousel-button"></span>`;
 });
 //console.log(buttonsHtml);
-carousel.insertAdjacentHTML("beforeend",`
+ carousel.insertAdjacentHTML("beforeend",`
 <div class="carousel-nav">
 ${buttonsHtml.join("")}
 </div>
-`);
+`); 
+
 
 const buttons=carousel.querySelectorAll('.carousel-button');
 buttons.forEach((button,i)=>{
