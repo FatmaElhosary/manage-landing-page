@@ -86,6 +86,7 @@ ul{
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 
@@ -107,16 +108,17 @@ ul{
 
 /*******carr******** */
 .menu{
+  background-color: var(--varyLightGray);
   text-align: center;
   position: relative;
-  background-color: var(--varyLightGray);
   padding: 4rem 2rem;
   margin: 5rem 1rem;
-  margin-top: 9rem;
+  margin-top: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 .menu h3{
   font-size: 25px;
@@ -133,7 +135,7 @@ ul{
   bottom: -3.5rem;
 }
 
-.menu--item  img{
+.menu--item  .carousel-img{
   position: absolute;
   top: -3rem;
   left: 50%;
@@ -141,8 +143,16 @@ ul{
   width: 100px;
 }
 .menu--item{
-  display: none;
+  display: none; 
+  background-color: var(--varyLightGray);
+
+
 }
+
+ .carousel{
+  display: flex;
+  flex-direction: row; 
+ }
 .item-selected{
 display:block;
 }
@@ -170,6 +180,10 @@ overflow: hidden;
 }
 .name{
   font-weight: 500;
+}
+.description{
+  padding: 0 1rem;
+
 }
 /* APPLYING MEDIA QUERIES small devices */
 @media (max-width: 768px) {
@@ -224,12 +238,37 @@ overflow: hidden;
     flex-direction: row; 
    }
    .menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: transparent;
+    width: 80%;
+  height: 350px;
+       padding: 0; 
+    margin: 0;
+    margin-top: 2rem;
+  overflow: hidden;
    }
+   .menu--wrapper{
+    width: 250%;
+    display: flex;
+    gap: 10px;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+   }
+   .menu--item{
+    display: block;
+    padding-bottom: 2rem;
+  width: 400px;
+  position: relative;
+  margin-top: 3rem;
+  }
+  .carousel-nav{
+    display: none;
+  }
 
-
+  .menu--item h4 {
+    margin-top: 3rem;
+}
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
