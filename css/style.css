@@ -14,7 +14,7 @@
   }
 *,
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   font-size: 16px;
   font-family: 'Be Vietnam Pro', sans-serif;
   margin: 0;
@@ -27,11 +27,12 @@ body {
 .background {
   position: absolute;
   z-index: -1;
-  right: -2%;
+  right: 0%;
+  left: 40%;
   top: -20%;
 }
 
-.container {
+.container1 {
   width: 80%;
   margin: auto;
   display: flex;
@@ -93,7 +94,9 @@ button:hover {
   opacity: 0.5;
 }
 
-.body .container {
+.body .container1 {
+  width:80%;
+  margin: auto;
   padding-top: 5%;
 }
 
@@ -212,7 +215,7 @@ button:hover {
 
 }
 
-
+/**************************************/
 
 body{
   min-height: 100vh;
@@ -322,9 +325,9 @@ ul{
  
   list-style-type: none;
 }
-.container{
+ .container{
   margin: 0 2rem;
-}
+} 
 #different{
   margin: 1rem 0;
   text-align: center;
@@ -505,7 +508,7 @@ overflow: hidden;
 
 
   .container {
-    width: 100%;
+    width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -631,8 +634,8 @@ overflow: hidden;
 .background{
   position: absolute;
   z-index: -1;
-  right: -20%;
-  top: -30%;
+  /* right: -20%;
+  top: -30%; */
   /* left: 25%;
   bottom: 20%; */
   overflow-x: hidden;
@@ -750,11 +753,15 @@ overflow: hidden;
  }
 
   #different {
-   
+    width: 80%;
+    margin: auto;
     background-position: -70% top;
     display: flex;
     flex-direction: row;
     text-align: left;
+}
+.container {
+  margin: 0;
 }
 .content .txt{
   padding-left: 4.5rem;
@@ -844,17 +851,28 @@ overflow: hidden;
 .upperFotertxt{
   color: var(--varyLightGray);
   font-size: 50px;
+  align-self: start;
 }
+
+
 
 .txth1{
   max-width: 40%;
-  margin: 5%;
+  /* margin: 5%; */
+  margin: 5% 10% 5%  0%;
+  display: flex;
 }
+
+
 .mainFooter{
   display: flex;
   background: #1d1e25;
   align-items: center;
   justify-content: center;
+}
+
+.btnn{
+  margin-right:7% ;
 }
 
 .footer {
@@ -867,7 +885,7 @@ overflow: hidden;
   display: grid;
   position: relative;
   bottom: 0px;
-  width: 80%;
+  width: 85%;
   grid-template-columns: repeat(3, 1fr) 2fr;
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
@@ -940,6 +958,10 @@ overflow: hidden;
 .col2 {
   grid-area: c;
   margin-top: 10%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 .col2 a{
  font-size: 20px;
@@ -958,6 +980,10 @@ overflow: hidden;
 .col3 {
   grid-area: d;
   margin-top: 10%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .col3 a{
@@ -980,7 +1006,17 @@ overflow: hidden;
     align-items: center;
   }
   .txth1{
-    max-width: 100%;
+    display: flex;
+    max-width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+  }
+
+  .upperFotertxt{
+    display: flex;
+    align-self: center;
+    align-items: center;
   }
 }
 
