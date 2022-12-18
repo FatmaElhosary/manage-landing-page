@@ -8,7 +8,7 @@ var span = document.getElementsByClassName("close")[0];
 
 var logo = document.getElementById("logo");
 
-var x = window.matchMedia("(max-width: 768px)");
+var maxWidth = window.matchMedia("(max-width: 768px)");
 
 var flag = true;
 
@@ -17,7 +17,6 @@ function track() {
     if (flag == true) {
         if (window.outerWidth > 768) {
             btn.style.display = "none";
-            console.log("Big Screen");
         }
         else {
             btn.style.display = "block";
@@ -48,7 +47,7 @@ btn.onclick = function () {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
     modal.style.display = "none";
-    if (x.matches) {
+    if (maxWidth.matches) {
         btn.style.display = "block";
         logo.style.paddingLeft = "0%";
     }
