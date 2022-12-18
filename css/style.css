@@ -98,11 +98,12 @@ body.dark {
 /* /////////////////////////////FOOTER ///////////////////////////////////////////// */
 
 .h22:hover {
-  text-decoration: underline;
-  /* color: inherit; */
+  color: var(--brightRed);
 }
 
-
+.h33:hover{
+  cursor: pointer;
+}
 
 
 
@@ -135,6 +136,9 @@ ul{
 #different{
   margin: 1rem 0;
   text-align: center;
+  background-image: url('../images/bg-tablet-pattern.svg');
+  background-repeat: no-repeat;
+  background-position: -70% top;
 }
 #different .btn{
   position: absolute;
@@ -316,6 +320,8 @@ overflow: hidden;
  }
 
   #different {
+   
+    background-position: -70% top;
     display: flex;
     flex-direction: row;
     text-align: left;
@@ -466,14 +472,16 @@ overflow: hidden;
 .social__links {
   grid-area: b;
   align-self: center;
+  margin-top: 15%;
 }
 
 
 @media (max-width: 768px) {
   .social__links {
     text-align: center;
-    grid-area: e;
+    grid-area: d;
     margin-bottom: 3.375rem;
+    margin-top: 0%
   }
 }
 
@@ -490,7 +498,7 @@ overflow: hidden;
 .col2 > a,
 .col3 > a {
   display: block;
-  color: white;
+  color: hsl(0, 0%, 98%);
   text-decoration: none;
 }
 
@@ -501,7 +509,7 @@ overflow: hidden;
 
 .col2 {
   grid-area: c;
-  margin-top: 15%;
+  margin-top: 10%;
 }
 .col2 a{
  font-size: 20px;
@@ -519,7 +527,7 @@ overflow: hidden;
 
 .col3 {
   grid-area: d;
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 .col3 a{
@@ -582,20 +590,24 @@ overflow: hidden;
 .invalid {
   color: red;
   display: none;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
 }
 
 .valid {
   display: none;
   color: rgb(22, 211, 22);
-  /* align-self: center; */
+  align-items: center;
+  justify-content: center;
 }
 .col4 > input::placeholder {
   color: #9095a7;
 }
 
 .go_btn {
-  background-color: #f25f3a;
-  color: white;
+  background-color: var(--brightRed);
+  color:hsl(0, 0%, 98%);
   border: none;
   border-radius: 50px;
   padding: 15px;
@@ -616,7 +628,7 @@ overflow: hidden;
 
 @media (max-width: 768px) {
   .logo__footer {
-    grid-area: d;
+    grid-area: e;
     margin: 0 auto;
     margin-bottom: 3.5rem;
   }
@@ -626,7 +638,7 @@ overflow: hidden;
   align-self: center;
   text-align: center;
   grid-area: f;
-  color: #9095a7;
+  color: var(--darkGrayishBlue);
 }
 
 @media (max-width: 768px) {

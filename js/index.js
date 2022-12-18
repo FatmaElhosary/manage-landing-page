@@ -131,3 +131,61 @@ sliderContainer.addEventListener("mousemove", (e) => {
     checkBoundary();
 });
 
+///////////////////////Changing icons color///////////////////////////////////
+
+
+var coimages = document.querySelectorAll('.h33')
+
+console.log(coimages);
+coimages.forEach((img) => {
+  img.addEventListener('mouseover', function(){
+    console.log(img.id);
+
+    switch (img.id) {
+      case 'face':
+        img.src = '../images/icon-facebook2.svg'
+      break;
+      case 'youtube':
+        img.src = '../images/icon-youtube2.svg' 
+      break;
+      case "twitter" :
+        img.src = '../images/icon-twitter2.svg' 
+      break;
+      case "pinterest" :
+        img.src = '../images/icon-pinterest2.svg' 
+      break;
+      case "instagram" :
+        img.src = '../images/icon-instagram2.svg' 
+      break;
+      default:
+        break;
+    }
+
+  })
+  img.addEventListener('mouseout', function(){
+    console.log(img.id);
+
+    switch (img.id) {
+      case 'face':
+        img.src = '../images/icon-facebook.svg'
+      break;
+      case 'youtube':
+        img.src = '../images/icon-youtube.svg' 
+      break;
+      case "twitter" :
+        img.src = '../images/icon-twitter.svg' 
+      break;
+      case "pinterest" :
+        img.src = '../images/icon-pinterest.svg' 
+      break;
+      case "instagram" :
+        img.src = '../images/icon-instagram.svg' 
+      break;
+      default:
+        break;
+    }
+
+  })
+}
+
+)
