@@ -34,6 +34,11 @@ body.dark {
   position: absolute;
 }
 
+.mode{
+  position: absolute;
+  top:50%;
+  right: 20px;
+}
 .label {
   width: 50px;
   height: 26px;
@@ -43,7 +48,7 @@ body.dark {
   align-items: center;
   justify-content: space-around;
 
-  margin: 10%;
+
   position: relative;
   transform: scale(1.5);
 }
@@ -96,6 +101,8 @@ body.dark {
   text-decoration: underline;
   /* color: inherit; */
 }
+
+
 
 
 
@@ -374,19 +381,57 @@ overflow: hidden;
 /* ////////////////////////////////////////////////////////////////////
 
 
-
+ 
 */
+
+.upperFoter{
+  background-color: var(--brightRed);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* height: 20%; */
+}
+
+.get-startedd{
+  background-color: var(--varyLightGray);
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  border-radius: 30px
+}
+.get-startedd a{
+  color:var(--brightRed);
+}
+.get-startedd:hover{
+  opacity: 0.5;
+}
+
+.upperFotertxt{
+  color: var(--varyLightGray);
+  font-size: 50px;
+}
+
+.txth1{
+  max-width: 40%;
+  margin: 5%;
+}
+.mainFooter{
+  display: flex;
+  background: #1d1e25;
+  align-items: center;
+  justify-content: center;
+}
 
 .footer {
   /* margin: 70px; */
+ 
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
   background: #1d1e25;
   color: white;
   display: grid;
-  position: absolute;
+  position: relative;
   bottom: 0px;
-  width: 100%;
+  width: 80%;
   grid-template-columns: repeat(3, 1fr) 2fr;
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
@@ -487,6 +532,17 @@ overflow: hidden;
     text-align: center;
     grid-area: c;
     margin-top: 0%;
+  }
+  .upperFoter{
+    flex-direction: column;
+  }
+
+  .get-startedd{
+    /* width: 50%; */
+    align-items: center;
+  }
+  .txth1{
+    max-width: 100%;
   }
 }
 
