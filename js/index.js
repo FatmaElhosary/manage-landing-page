@@ -115,16 +115,16 @@ span.onclick = function () {
 // })
 
 
-var flag = true;
+var flagq = true;
 var logo = document.getElementById('logo')
 
 $(function(){
   $('.checkbox').on('change' , function() {
 
-    flag = !flag;
-    console.log(flag);
+    flagq = !flagq;
+    console.log(flagq);
 
-    if(flag == true)
+    if(flagq == true)
       {
     $(':root').css('--varyLightGray' , 'hsl(0, 0%, 98%)')
     $(':root').css('--darkBlue' , 'hsl(228, 39%, 23%)')
