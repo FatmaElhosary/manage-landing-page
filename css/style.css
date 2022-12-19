@@ -347,6 +347,7 @@ h6{
 a{
   text-decoration: none;
 }
+
 ul{
  
   list-style-type: none;
@@ -392,7 +393,7 @@ font-size: 18px;
 }
 .different h3{
   font-size: 1.5rem;
-  color: var(--veryDarkBlue);
+  color: var(--darkBlue);
 }
 .content{
   margin: 3rem 0;
@@ -829,7 +830,7 @@ font-size: 18px;
   margin-left: 1.5rem;
   background-color: transparent !important;
   font-size: 1rem;
-  
+  color: var(--darkBlue);
 }
 .content .txt {
   padding-left: 6.5rem;

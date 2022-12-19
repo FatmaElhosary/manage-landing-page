@@ -117,7 +117,8 @@ span.onclick = function () {
 
 var flagq = true;
 var logo = document.getElementById('logo')
-
+var bgbg = document.getElementById('different')
+var imm = document.getElementById('imm')
 $(function(){
   $('.checkbox').on('change' , function() {
 
@@ -129,10 +130,16 @@ $(function(){
     $(':root').css('--varyLightGray' , 'hsl(0, 0%, 98%)')
     $(':root').css('--darkBlue' , 'hsl(228, 39%, 23%)')
     logo.src="./images/logo.svg" ;
+    bgbg.style.backgroundImage = 'url(../images/bg-tablet-pattern.svg)'
+    // imm.setAttribute('src','../images/bg-tablet-pattern.svg')
+    imm.src = '../images/bg-tablet-pattern.svg'
       }else{
     $(':root').css('--varyLightGray' , 'hsl(228, 39%, 23%)')
     $(':root').css('--darkBlue' , 'hsl(0, 0%, 98%)')
     logo.src="./images/logofoter.svg" ;
+    bgbg.style.backgroundImage = 'url(../images/bg-tablet-pattern2.svg)'
+    imm.src = '../images/bg-tablet-pattern2.svg'
+
   }
   })
 })
