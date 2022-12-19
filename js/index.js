@@ -174,7 +174,7 @@ function ValidateEmail(input) {
 
   document.getElementById('submit').addEventListener('click' ,()=>{ValidateEmail(val)} )
 
-  ////////////////////////////////////////////////////////////////////
+  /////////////////////////////Fatmaaaaaaa///////////////////////////
 
  const menu=document.querySelector('.menu');
 document.querySelectorAll('.menu--wrapper').forEach(carousel=>{
@@ -250,6 +250,34 @@ sliderContainer.addEventListener("mousemove", (e) => {
     innerSlider.style.left = `${x - startX}px`;
     checkBoundary();
 });
+function dragStart(e){
+    pressed = true;
+    startX = e.offsetX - innerSlider.offsetLeft;
+    sliderContainer.style.cursor = "grabbing";
+}
+function dragging (e)  {
+  if (!pressed) return;
+  e.preventDefault();
+
+  x = e.offsetX;
+
+  innerSlider.style.left = `${x - startX}px`;
+  checkBoundary();
+}
+function dragStop() {
+  sliderContainer.style.cursor = "grab";
+  pressed = false;
+}
+
+sliderContainer.addEventListener("mousedown", dragStart);
+sliderContainer.addEventListener("touchstart", dragStart);
+
+sliderContainer.addEventListener("mousemove", dragging);
+sliderContainer.addEventListener("touchmove", dragging);
+
+sliderContainer.addEventListener("mouseup", dragStop);
+sliderContainer.addEventListener("touchend", dragStop);
+
 
 ///////////////////////Changing icons color///////////////////////////////////
 
