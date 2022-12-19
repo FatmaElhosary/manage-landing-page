@@ -243,7 +243,7 @@ body.dark {
   right: 20px;
 } */
 .mode{
-  margin-top: 5px;
+  margin-top: 3%;
   margin-left: 10px;
   cursor: pointer;
 }
@@ -392,7 +392,7 @@ font-size: 18px;
 }
 .different h3{
   font-size: 1.5rem;
-  color: var(--darkBlue);
+  color: var(--veryDarkBlue);
 }
 .content{
   margin: 3rem 0;
@@ -572,7 +572,7 @@ font-size: 18px;
 
   .header .left {
     align-self: center;
-    width: 40%;
+    width: 23%;
   }
 
   .header .middle {
@@ -743,6 +743,7 @@ font-size: 18px;
 
   .header .middle button {
     font-size: 14px;
+    font-weight: 700;
   }
 }
 
@@ -794,7 +795,7 @@ font-size: 18px;
 
   .header .middle button {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
   }
   
   .header .right button {
@@ -889,6 +890,9 @@ font-size: 18px;
 .menu--item p{
   padding: 0 1.5rem;
   
+}
+.mode{
+  margin-top: 1.5%;
 }
 } 
 
