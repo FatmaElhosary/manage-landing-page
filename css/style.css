@@ -305,6 +305,19 @@ body.dark {
   color: var(--brightRed);
 }
 
+
+.h22{
+  width: 60%;
+  align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+  .h22{
+    width: 90%;
+  }
+}
+
+
 .h33:hover{
   cursor: pointer;
 }
@@ -894,7 +907,7 @@ font-size: 18px;
 .txth1{
   max-width: 40%;
   /* margin: 5%; */
-  margin: 5% 10% 5%  0%;
+  margin: 5% 5% 5%  0%;
   display: flex;
 }
 
@@ -956,6 +969,7 @@ font-size: 18px;
   grid-area: b;
   align-self: center;
   margin-top: 15%;
+  margin-left: 10%;
 }
 
 
@@ -964,7 +978,8 @@ font-size: 18px;
     text-align: center;
     grid-area: d;
     margin-bottom: 3.375rem;
-    margin-top: 0%
+    margin-top: 0%;
+    margin-left: 0%;
   }
 }
 
@@ -983,6 +998,7 @@ font-size: 18px;
   display: block;
   color: hsl(0, 0%, 98%);
   text-decoration: none;
+  font-size: 17px !important;
 }
 
 .col2 > a:not(:last-child),
@@ -994,7 +1010,7 @@ font-size: 18px;
   grid-area: c;
   margin-top: 10%;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   display: flex;
   flex-direction: column;
 }
@@ -1016,7 +1032,7 @@ font-size: 18px;
   grid-area: d;
   margin-top: 10%;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   display: flex;
   flex-direction: column;
 }
@@ -1034,6 +1050,7 @@ font-size: 18px;
   }
   .upperFoter{
     flex-direction: column;
+    padding: 30% 0%;
   }
 
   .get-startedd{
@@ -1052,13 +1069,15 @@ font-size: 18px;
     display: flex;
     align-self: center;
     align-items: center;
+    text-align: center;
   }
 }
 
 .col4 {
   grid-area: e;
   text-align: right;
-  margin-right: 20%;
+  align-self: flex-end;
+  /* margin-right: 20%; */
 }
 
 @media (max-width: 768px) {
@@ -1071,6 +1090,10 @@ font-size: 18px;
   }
 }
 
+
+.forma1{
+margin-left: 15%;
+}
 .col4 input {
   border-radius: 50px;
   border: none;
@@ -1084,8 +1107,11 @@ font-size: 18px;
 @media (max-width: 768px) {
   .col4 input {
     width:70%;
-
   }
+  .forma1{
+    margin-left: 0%;
+    }
+
 }
 
 .invalid {
@@ -1125,6 +1151,7 @@ font-size: 18px;
 .logo__footer {
   grid-area: a;
   align-self: center;
+  margin-left: 15%;
 }
 
 @media (max-width: 768px) {
@@ -1132,12 +1159,14 @@ font-size: 18px;
     grid-area: e;
     margin: 0 auto;
     margin-bottom: 3.5rem;
+ 
+
   }
 }
 
 .copyright {
-  align-self: center;
-  text-align: center;
+  align-self: flex-end;
+  text-align: right;
   grid-area: f;
   color: var(--darkGrayishBlue);
 }
