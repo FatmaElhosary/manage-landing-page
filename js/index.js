@@ -97,23 +97,45 @@ span.onclick = function () {
 
 
 ////////////////////Dark Mode Code////////////////////////////////
-$(".change").on("click", function () {
-    if ($("body").hasClass("dark")) {
-        $("body").removeClass("dark");
-        $(".change").text("OFF");
-    } else {
-        $("body").addClass("dark");
-        $(".change").text("ON");
-    }
-});
+// $(".change").on("click", function () {
+//     if ($("body").hasClass("dark")) {
+//         $("body").removeClass("dark");
+//         $(".change").text("OFF");
+//     } else {
+//         $("body").addClass("dark");
+//         $(".change").text("ON");
+//     }
+// });
 ////////////////////Dark Mode Code////////////////////////////////
 
-const checkbox = document.getElementById('checkbox');
+// const checkbox = document.getElementById('checkbox');
 
-checkbox.addEventListener('change', ()=>{
-  document.body.classList.toggle('dark');
+// checkbox.addEventListener('change', ()=>{
+//   document.body.classList.toggle('dark');
+// })
+
+
+var flag = true;
+var logo = document.getElementById('logo')
+
+$(function(){
+  $('.checkbox').on('change' , function() {
+
+    flag = !flag;
+    console.log(flag);
+
+    if(flag == true)
+      {
+    $(':root').css('--varyLightGray' , 'hsl(0, 0%, 98%)')
+    $(':root').css('--darkBlue' , 'hsl(228, 39%, 23%)')
+    logo.src="./images/logo.svg" ;
+      }else{
+    $(':root').css('--varyLightGray' , 'hsl(228, 39%, 23%)')
+    $(':root').css('--darkBlue' , 'hsl(0, 0%, 98%)')
+    logo.src="./images/logofoter.svg" ;
+  }
+  })
 })
-
 
 ////////////////////Email validation//////////////////////////////////////////////////
 var valid = document.getElementById('valid')
@@ -151,6 +173,8 @@ function ValidateEmail(input) {
 
 
   document.getElementById('submit').addEventListener('click' ,()=>{ValidateEmail(val)} )
+
+  ////////////////////////////////////////////////////////////////////
 
  const menu=document.querySelector('.menu');
 document.querySelectorAll('.menu--wrapper').forEach(carousel=>{
